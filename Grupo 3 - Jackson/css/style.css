@@ -211,7 +211,6 @@ li a:hover {
   background-color: #111;
 }
 
-/**/
 article{
 	width: 100%;
 }
@@ -228,5 +227,29 @@ article .grade {
 }
 
 article div .corpo {
-	margin-bottom: 10px;
+	margin: 0 auto;
+	width: 75%;
+}
+
+article div p {
+	margin: 10px auto;
+	width:  75%;
+	text-align: justify;
+}
+
+article div p img {
+	display: block;
+  	margin: 10px auto;
+	width: 15%;
+  	height: auto;
+}
+
+article div p .tutorial {
+	display: block;
+	margin: 10px auto;
+	width: 75%;
+	max-width: 100%;
+	height: auto;
+	background-color: white;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
