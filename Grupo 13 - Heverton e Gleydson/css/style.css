@@ -2,7 +2,8 @@
 
 *{
 	box-sizing: border-box;
-	transition: 1s;
+	transition: 200ms;
+	font-family: Roboto, Verdana, sans-serif;
 }
 
 .top-site {
@@ -62,10 +63,10 @@ article h2{
 }
 
 main{
-	width: 70%;
+	width: 90%;
 	height: auto;
 	margin: 0 auto;
-	display: flex;
+	/* display: flex; */
 }
 
 /*@media only screen and (max-width: 1000px) {
@@ -208,4 +209,47 @@ li a {
 
 li a:hover {
   background-color: #111;
+}
+
+article{
+	width: 100%;
+}
+
+article .titulo{
+	margin: 0 auto;
+	width: 75%;
+}
+
+article .grade {
+	float: none;
+	width: 70%;
+	margin: 10px auto;
+}
+
+article div .corpo {
+	margin: 0 auto;
+	width: 75%;
+}
+
+article div p {
+	margin: 10px auto;
+	width:  75%;
+	text-align: justify;
+}
+
+article div p img {
+	display: block;
+  	margin: 10px auto;
+	width: 15%;
+  	height: auto;
+}
+
+article div p .tutorial {
+	display: block;
+	margin: 10px auto;
+	width: 75%;
+	max-width: 100%;
+	height: auto;
+	background-color: white;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
