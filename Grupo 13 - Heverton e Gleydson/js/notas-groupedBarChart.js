@@ -33,7 +33,7 @@ function notas_groupedBarChart(ctx) {
             },
             title: {
                 display: true,
-                text: 'Notas - 2º Período - 2017.1'
+                text: 'Notas - 2º Período - 2018.1'
             }
         }
     });
