@@ -270,3 +270,7 @@ h2{
   font-size: 12px;
   margin:5px;
 }
+.chart-container{
+	width: 300px;
+	height: 300px;
+}
