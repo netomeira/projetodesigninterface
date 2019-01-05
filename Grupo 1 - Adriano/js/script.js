@@ -155,7 +155,7 @@ db.transaction(function (tx) {
 				tx1.executeSql('SELECT * FROM DISCIPLINAS_REFERENCIAS WHERE REF_DIS_CODIGO = ' + results.rows.item(i).DIS_CODIGO, [], function (tx1, results1) { 
                 len = results1.rows.length; 
                }
-
+ 
 
                db.transaction(function (tx1) {  
                	  tx1.executeSql('SELECT * FROM DISCIPLINAS_REFERENCIAS WHERE REF_DIS_CODIGO = ' + results.rows.item(i).DIS_CODIGO, [], function (tx1, results1) {   
