@@ -15,7 +15,8 @@ function insertProfessores(codigo, nome, id_instituicao){
 		{ tx.executeSql('INSERT INTO PROFESSORES (PRO_CODIGO, PRO_NOME, PRO_INS_CODIGO) VALUES ("' + codigo + '","' + nome + '","' +id_instituicao+'")'); });   
 }
 
-document.querySelector('#lista').innerHTML += "Carregando dados! Aguarde..."; 
+document.querySelector('#lista').innerHTML += "<img alt='Carregando dados' border='0' width='200' src='images/carregando.gif' title='Carregando dados! Aguarde...'> <h4>Carregando dados! Aguarde...<h4>"; 
+
 
 var db = openDatabase('BANCO_POS', '1.0', 'UNIPE', 2 * 1024 * 1024); 
 db.transaction(function (tx) 
@@ -207,7 +208,7 @@ function ObtemCabecalho()
   mensagem +='<article>';
   mensagem +='<h2>Lista de Disciplinas</h2>';
   mensagem +='<p>Postado em <time datetime="2018-09-04T16:31:24+02:00">05 Janeiro 2019</time> por <a href="#">Adriano Barroso</a> - Matrícula: POS136012 - <a href="#comments">6 Comentários</a></p>';
-  mensagem +='<p><b>Objetivo:</b> Relação das disciplinas com a utilização do <a href="#">Web SQL</a> da disciplina de Desenvolvimento de Interfaces Web ministrada pelo professor Ms. João Paulo Fechine </p>';
+  mensagem +='<p><b>Objetivo:</b> Relação das disciplinas com a utilização do Web SQL da disciplina de Desenvolvimento de Interfaces Web ministrada pelo professor Ms. João Paulo Fechine </p>';
   mensagem +='<p></p></article>';
   document.querySelector('#cabecalho').innerHTML +=  mensagem;           
           
